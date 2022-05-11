@@ -3,18 +3,40 @@
  * Mostrar en consola los números del 100 al 0 utilizando la estructura while, for y do while
  */
 
-let i = 100;
-while(i >= 0) i--;
-console.log
+let a = 100;
+console.log(a)
+while(a > 0) a--;
+console.log(a)
 
-for(let i = 100; i >= 0; i--) console.log(i);
+for(let b = 100; b > 0; b--) console.log(b);
+
+let c = 100;
+console.log(c);
+do {
+  c++;
+  console.log(c)
+} while (c > 0);
 
 //
  // 02
- /**
+/**
   * Mostrar en consola los números pares del 0 al 1000 utilizando la estructura while, for y do while
   */ 
- 
+
+let d = 0;
+console.log(d)
+while(d < 1000) d + 2;
+console.log(d)
+
+for(let d = 0; d < 1000; d + 2) console.log(d);
+
+let e = 0;
+console.log(e);
+do {
+  e + 2;
+  console.log(e)
+} while (e < 1000);
+
 // 03
 /**
  * Mostrar en consola la suma parcial de todos los números 
@@ -31,6 +53,7 @@ for(let i = 100; i >= 0; i--) console.log(i);
 /**
  * Mostrar en consola el siguiente dibujo utilizando la estructura while, for y do while
  */
+/* 
 *
 **
 ***
@@ -44,6 +67,7 @@ for(let i = 100; i >= 0; i--) console.log(i);
 ***********
 ************
 *************
+*/
 
 // 06
 /**
@@ -54,8 +78,8 @@ for(let i = 100; i >= 0; i--) console.log(i);
 /**
  * Mostrar en consola los números desde el 1000 hasta el 0
  * Cada 10 números, los números se tienen que mostrar con el siguiente formato: **numero**
- 
- ejemplo
+
+ejemplo
 **1000**
 999
 998
@@ -80,12 +104,12 @@ for(let i = 100; i >= 0; i--) console.log(i);
 979
 ...
 **0**
- 
+
  */
 
-ARRAYS
+//ARRAYS
 
-   
+
 /**
  *  Crear un programa que pida ingresar nombres separados por espacios y
  * devuelva un mensaje que contenga un saludo a cada persona. Ejemplo:}
@@ -96,6 +120,14 @@ ARRAYS
  * ¡Hola Grace!
  * */
 
+let names = [];
+names.push(prompt(`Ingrese su nombre`))
+do { 
+  for (let i = 0; i < names.length; i++) {
+  alert("¡Hola " + names[i] + "!");
+  }
+} while (names.length < 10)
+
 //02
 /**
  * Crear un programa que pida ingresar números separados por espacios y devuelva un mensaje con el menor número ingresado. Ejemplo:
@@ -104,12 +136,24 @@ ARRAYS
  * El menor número es: 2
  */
 
+let listaDeNumeros1 = prompt(`Ingrese la cantidad de números que desee, separados por un espacio`);
+let arrayDeNumeros1 = listaDeNumeros1.split (' ');
+arrayDeNumeros1.sort();
+alert(`El menor número es ${arrayDeNumeros1[0]}`)
+console.log(arrayDeNumeros1)
+
  // 03
- /**
+/**
   * Crear un programa que pida ingresar números separados por espacios y devuelva un mensaje con la suma de todos los números. Ejemplo:
   * Ingrese números: 5 7 10 12 24
   * La suma de todos los números es: 58
   */
+
+  let listaDeNumeros2 = prompt(`Ingrese la cantidad de números que desee, separados por un espacio`);
+  let arrayDeNumeros2 = listaDeNumeros2.split (' ');
+  for (let i = 0; i < listaDeNumeros2.length; i++) {
+    let resultado = resultado + listaDeNumeros2[i];
+  }
 
   // 04
 /**
