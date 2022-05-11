@@ -71,7 +71,7 @@ alert(`Al cuadrado es ${numero}`);
 
 
 // 05
-/***********************************************
+/**********************************************
  *
  * Hacer una funcion que pida dos valores y una palabra
  * Los valores pueden ser "suma", "resta", "multiplicacion", "division"
