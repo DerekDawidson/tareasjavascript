@@ -43,11 +43,59 @@ do {
  * que van desde 0 hasta 1000 utilizando la estructura while, for y do while
  */
 
+let f = 0;
+let g = 0;
+console.log(g)
+while (f < 1000) {
+  f++;
+  g += f;
+  console.log(g);
+}
+
+let h = 0;
+for (let i = 0; i <= 1000; i++) {
+h += i;
+console.log(h);
+}
+
+let j = 0;
+console.log(j);
+do {
+  let k = 0;
+  j++;
+  k += j
+  console.log(k)
+} while (j < 1000);
+
 // 04
 /**
  * Mostrar en consola la suma parcial de todos los 
  * números impares que van desde 0 hasta 1000 utilizando la estructura while, for y do while
  */
+
+let l = 1;
+let m = 1;
+console.log(m)
+while (l < 1000) {
+  l += 2;
+  m += l;
+  console.log(m);
+}
+
+let n = 1;
+for (let o = 1; o <= 1000; o += 2) {
+n += o;
+console.log(n);
+}
+
+let p = 1;
+console.log(p);
+do {
+  let q = 1;
+  q += 2;
+  p += q;
+  console.log(p);
+} while (q < 1000);
 
 // 05
 /**
